@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google map API</title>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
+    <header>Google Maps API Implimentation</header>
+    <div id="map" style="height: 510px"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb9xco8AJYhwIpycWfQl1O3mFhnKyr_BM"></script>
+
     <script src="./src/index.ts"></script>
 
-    <iframe
-    width="450"
-    height="250"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCb9xco8AJYhwIpycWfQl1O3mFhnKyr_BM&q=Eiffel+Tower,Paris+France" allowfullscreen>
-    </iframe>
+    <script src = "./faker.js" type = "javascript"></script>
+    <script>
+      var randomName = faker.name.findName(); // Caitlyn Kerluke
+      var randomEmail = faker.internet.email(); // Rusty@arne.info
+      var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+    </script>
 
 </body>
 </html>
